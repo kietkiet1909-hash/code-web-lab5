@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiki shopping</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .products {
+            display: flex; /* Sử dụng Flexbox để sắp xếp các sản phẩm nằm ngang trên cùng một hàng */
+        }
+       .product-item {
+        width: 20%;         /* Mỗi sản phẩm chiếm 20% chiều rộng của hàng (phù hợp cho 5 sản phẩm/hàng) */
+        border: 1px solid #ccc; /* Tạo đường viền màu xám nhạt xung quanh sản phẩm */
+        margin: 8px;        /* Tạo khoảng cách trống bên ngoài giữa các sản phẩm */
+        border-radius: 8px; /* Bo tròn các góc của khung sản phẩm */
+        cursor: pointer;    /* Đổi con trỏ chuột thành hình bàn tay khi rê vào sản phẩm */
+    }
+        .product-item:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-image {
+            width: 100%;
+        }
+        .product-name,.star,.price,.manufacturer {
+            padding: 8px;
+
+        }
+        .price {
+            color: #E11A45;
+            font-weight: 600;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>Hàng ngoại giá hot</h2>
+    <div class="products">
+        <!-- item 1-->
+        <div class="product-item">
+            <img src="https://salt.tikicdn.com/cache/750x750/ts/product/02/8d/31/7f26d1bf1d9cddc0095261c6a0e65749.png.webp"
+                alt="photo" class="product-image">
+            <h3 class="product-name">Dung Dịch Tẩy Keo, Nhựa Đường 3M 08987 (425 g)</h3>
+            <span class="star">⭐⭐⭐⭐⭐</span>
+            <p class="price">220.000</p>
+            <p class="manufacturer">Made in China</p>
+
+        </div>
+        <!-- item 2-->
+        <div class="product-item">
+            <img src="https://salt.tikicdn.com/cache/750x750/ts/product/19/ed/1e/63d8569b598562637b758393ccd49019.png.webp"
+                alt="photo" class="product-image">
+            <h3 class="product-name">Sữa tắm tạo bọt dưỡng trắng và làm mềm mịn da (450 ml/chai)</h3>
+            <span class="star">⭐⭐⭐⭐⭐</span>
+            <p class="price">171.000</p>
+            <p class="manufacturer">Made in China</p>
+        </div>
+        <!-- item 3-->
+        <div class="product-item">
+            <img src="https://salt.tikicdn.com/cache/750x750/ts/product/11/ee/0c/6c779a7700d538eada6f6afff2aefa26.jpg.webp"
+                alt="photo" class="product-image">
+            <h3 class="product-name">Bộ 3 lon Sữa bột Nestlé NAN OPTIPRO PLUS</h3>
+            <span class="star">⭐⭐⭐⭐⭐</span>
+            <p class="price">368.226</p>
+            <p class="manufacturer">Made in China</p>
+        </div>
+        <!-- item 4-->
+        <div class="product-item">
+            <img src="https://salt.tikicdn.com/cache/750x750/ts/product/11/ee/0c/6c779a7700d538eada6f6afff2aefa26.jpg.webp"
+                alt="photo" class="product-image">
+            <h3 class="product-name">Bộ 3 lon Sữa bột Nestlé NAN OPTIPRO PLUS</h3>
+            <span class="star">⭐⭐⭐⭐⭐</span>
+            <p class="price">220.000</p>
+            <p class="manufacturer">Made in China</p>
+        </div>
+<!-- item 5-->
+        <div class="product-item">
+            <img src="https://salt.tikicdn.com/cache/750x750/ts/product/11/ee/0c/6c779a7700d538eada6f6afff2aefa26.jpg.webp"
+                alt="photo" class="product-image">
+            <h3 class="product-name">Bộ 3 lon Sữa bột Nestlé NAN OPTIPRO PLUS\</h3>
+            <span class="star">⭐⭐⭐⭐⭐</span>
+            <p class="price">220.000</p>
+            <p class="manufacturer">Made in China</p>
+
+        </div>
+    </div>
+</body>
+</html>
